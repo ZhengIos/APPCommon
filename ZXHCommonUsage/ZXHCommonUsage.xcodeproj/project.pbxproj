@@ -13,6 +13,12 @@
 		FFA7A20B1D222A9900C1ED6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA7A2091D222A9900C1ED6D /* Main.storyboard */; };
 		FFA7A20D1D222A9900C1ED6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA7A20C1D222A9900C1ED6D /* Assets.xcassets */; };
 		FFA7A2101D222A9900C1ED6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA7A20E1D222A9900C1ED6D /* LaunchScreen.storyboard */; };
+		FFA7A2191D22464F00C1ED6D /* UINavigationBar+ZXHUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A2181D22464F00C1ED6D /* UINavigationBar+ZXHUsage.m */; };
+		FFA7A21C1D2247CB00C1ED6D /* UITextField+ZXHUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A21B1D2247CB00C1ED6D /* UITextField+ZXHUsage.m */; };
+		FFA7A21F1D2249A500C1ED6D /* ZXHValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A21E1D2249A500C1ED6D /* ZXHValueObject.m */; };
+		FFA7A2221D22532000C1ED6D /* UIView+ZXHUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A2211D22532000C1ED6D /* UIView+ZXHUsage.m */; };
+		FFA7A2251D2253A500C1ED6D /* ZXHUIKitUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A2241D2253A500C1ED6D /* ZXHUIKitUsage.m */; };
+		FFA7A2281D2263F000C1ED6D /* UITabBar+ZXHUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A2271D2263F000C1ED6D /* UITabBar+ZXHUsage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		FFA7A20C1D222A9900C1ED6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA7A20F1D222A9900C1ED6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFA7A2111D222A9900C1ED6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA7A2171D22464F00C1ED6D /* UINavigationBar+ZXHUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ZXHUsage.h"; sourceTree = "<group>"; };
+		FFA7A2181D22464F00C1ED6D /* UINavigationBar+ZXHUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ZXHUsage.m"; sourceTree = "<group>"; };
+		FFA7A21A1D2247CB00C1ED6D /* UITextField+ZXHUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZXHUsage.h"; sourceTree = "<group>"; };
+		FFA7A21B1D2247CB00C1ED6D /* UITextField+ZXHUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZXHUsage.m"; sourceTree = "<group>"; };
+		FFA7A21D1D2249A500C1ED6D /* ZXHValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXHValueObject.h; sourceTree = "<group>"; };
+		FFA7A21E1D2249A500C1ED6D /* ZXHValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXHValueObject.m; sourceTree = "<group>"; };
+		FFA7A2201D22532000C1ED6D /* UIView+ZXHUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXHUsage.h"; sourceTree = "<group>"; };
+		FFA7A2211D22532000C1ED6D /* UIView+ZXHUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXHUsage.m"; sourceTree = "<group>"; };
+		FFA7A2231D2253A500C1ED6D /* ZXHUIKitUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXHUIKitUsage.h; sourceTree = "<group>"; };
+		FFA7A2241D2253A500C1ED6D /* ZXHUIKitUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXHUIKitUsage.m; sourceTree = "<group>"; };
+		FFA7A2261D2263F000C1ED6D /* UITabBar+ZXHUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+ZXHUsage.h"; sourceTree = "<group>"; };
+		FFA7A2271D2263F000C1ED6D /* UITabBar+ZXHUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+ZXHUsage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,16 @@
 				FFA7A20E1D222A9900C1ED6D /* LaunchScreen.storyboard */,
 				FFA7A2111D222A9900C1ED6D /* Info.plist */,
 				FFA7A2001D222A9900C1ED6D /* Supporting Files */,
+				FFA7A2171D22464F00C1ED6D /* UINavigationBar+ZXHUsage.h */,
+				FFA7A2181D22464F00C1ED6D /* UINavigationBar+ZXHUsage.m */,
+				FFA7A21A1D2247CB00C1ED6D /* UITextField+ZXHUsage.h */,
+				FFA7A21B1D2247CB00C1ED6D /* UITextField+ZXHUsage.m */,
+				FFA7A21D1D2249A500C1ED6D /* ZXHValueObject.h */,
+				FFA7A21E1D2249A500C1ED6D /* ZXHValueObject.m */,
+				FFA7A2231D2253A500C1ED6D /* ZXHUIKitUsage.h */,
+				FFA7A2241D2253A500C1ED6D /* ZXHUIKitUsage.m */,
+				FFA7A2261D2263F000C1ED6D /* UITabBar+ZXHUsage.h */,
+				FFA7A2271D2263F000C1ED6D /* UITabBar+ZXHUsage.m */,
 			);
 			path = ZXHCommonUsage;
 			sourceTree = "<group>";
@@ -75,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				FFA7A2011D222A9900C1ED6D /* main.m */,
+				FFA7A2201D22532000C1ED6D /* UIView+ZXHUsage.h */,
+				FFA7A2211D22532000C1ED6D /* UIView+ZXHUsage.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,7 +181,13 @@
 			files = (
 				FFA7A2081D222A9900C1ED6D /* ViewController.m in Sources */,
 				FFA7A2051D222A9900C1ED6D /* AppDelegate.m in Sources */,
+				FFA7A2221D22532000C1ED6D /* UIView+ZXHUsage.m in Sources */,
+				FFA7A2191D22464F00C1ED6D /* UINavigationBar+ZXHUsage.m in Sources */,
+				FFA7A21C1D2247CB00C1ED6D /* UITextField+ZXHUsage.m in Sources */,
 				FFA7A2021D222A9900C1ED6D /* main.m in Sources */,
+				FFA7A21F1D2249A500C1ED6D /* ZXHValueObject.m in Sources */,
+				FFA7A2251D2253A500C1ED6D /* ZXHUIKitUsage.m in Sources */,
+				FFA7A2281D2263F000C1ED6D /* UITabBar+ZXHUsage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
