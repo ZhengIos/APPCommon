@@ -7,40 +7,41 @@
 //
 
 #import "ZXHValueObject.h"
+#import "ZXHBaseObject.h"
 static inline CGFloat distanceBetweenPoints(CGPoint point1,CGPoint point2)
 {
     CGFloat dx=point2.x-point1.x;
     CGFloat dy=point2.y-point1.y;
     return sqrt(dx*dx+dy*dy);
 }
-long long ZXHHardDriveTotalSize()
+static inline long long ZXHHardDriveTotalSize()
 {
     NSFileManager *fm=[NSFileManager defaultManager];
     NSDictionary *fattributes=[fm attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
     long long total=[[fattributes objectForKey:NSFileSystemSize]longLongValue]/1000000000;
     return total;
 }
-long long ZXHHardDriveFreeSize()
+static inline long long ZXHHardDriveFreeSize()
 {
     NSFileManager *fm=[NSFileManager defaultManager];
     NSDictionary *fattributes=[fm attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
     long long free=[[fattributes objectForKey:NSFileSystemFreeSize]longLongValue]/1000000000;
     return free;
 }
-NSDate * getYearsDate(int years)
+static inline NSDate * getYearsDate(int years)
 {
     NSCalendar *gregorian=[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *dateComponents=[[NSDateComponents alloc] init];
     [dateComponents setYear:years];
     return  [gregorian dateByAddingComponents:dateComponents toDate:[NSDate date] options:0];
 }
-NSString *stringFromDictionary(NSDictionary *dict)
+static inline NSString *stringFromDictionary(NSDictionary *dict)
 {
     NSData *data=[NSJSONSerialization dataWithJSONObject:dict options:0 error:nil];
     NSString *str=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     return str;
 }
-NSAttributedString *multiStylesStirng(NSString *string1,UIColor *color1,NSString *string2,UIColor *color2,NSInteger spaceLenght)
+static inline NSAttributedString *multiStylesStirng(NSString *string1,UIColor *color1,NSString *string2,UIColor *color2,NSInteger spaceLenght)
 {
     NSInteger length1=string1.length;
     NSInteger length2=string2.length;
@@ -54,6 +55,28 @@ NSAttributedString *multiStylesStirng(NSString *string1,UIColor *color1,NSString
     [attributedString setAttributes:attriDic2 range:NSMakeRange(length1+spaceLenght, length2)];
     return attributedString;
 }
+#pragma mark--数据类型的转换
+static inline const char * stringToChar(NSString *str)
+{
+    const char *a=[str UTF8String];
+    return a;
+}
+static inline NSString *charToString(char *a)
+{
+    return [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
+}
+static inline NSData *charToData(char *a)
+{
+    NSString *str=[[NSString alloc] initWithUTF8String:a];
+    NSData *data=[str dataUsingEncoding:NSUTF8StringEncoding];
+    return data;
+}
+static inline const char *dataToChar(NSData *data)
+{
+    return [data bytes];
+}
+
+
 //@implementation ZXHValueObject
 //+(instancetype)sharedValueObject
 //{

@@ -22,13 +22,13 @@
  *
  *  @return 单位为G
  */
-long long ZXHHardDriveTotalSize();
+ static inline long long ZXHHardDriveTotalSize();
 /**
  *  获取可用容量
  *
  *  @return 单位为G
  */
-long long ZXHHardDriveFreeSize();
+ static inline long long ZXHHardDriveFreeSize();
 /**
  *  获取时间(年)
  *
@@ -36,7 +36,7 @@ long long ZXHHardDriveFreeSize();
  *
  *  @return <#return value description#>
  */
-NSDate * getYearsDate(int years);
+ static inline NSDate * getYearsDate(int years);
 /**
  *  将字典转换为字符串
  *
@@ -44,7 +44,7 @@ NSDate * getYearsDate(int years);
  *
  *  @return <#return value description#>
  */
-NSString *stringFromDictionary(NSDictionary *dict);
+ static inline NSString *stringFromDictionary(NSDictionary *dict);
 /**
  *  返回两种样式的字符串
  *
@@ -56,7 +56,42 @@ NSString *stringFromDictionary(NSDictionary *dict);
  *
  *  @return <#return value description#>
  */
-NSAttributedString *multiStylesStirng(NSString *string1,UIColor *color1,NSString *string2,UIColor *color2,NSInteger spaceLenght);
+ static inline NSAttributedString *multiStylesStirng(NSString *string1,UIColor *color1,NSString *string2,UIColor *color2,NSInteger spaceLenght);
+#pragma mark --数据类型的转换
+/**
+ *  NSString转换为char*
+ *
+ *  @param str <#str description#>
+ *
+ *  @return <#return value description#>
+ */
+static inline const char * stringToChar(NSString *str);
+/**
+ *  char转换为NSStirng
+ *
+ *  @param a <#a description#>
+ *
+ *  @return <#return value description#>
+ */
+static inline NSString *charToString(char *a);
+/**
+ *  <#Description#>
+ *
+ *  @param a <#a description#>
+ *
+ *  @return <#return value description#>
+ */
+static inline NSData *charToData(char *a);
+/**
+ *  <#Description#>
+ *
+ *  @param data <#data description#>
+ *
+ *  @return <#return value description#>
+ */
+static inline const char *dataToChar(NSData *data);
+
+
 //@interface ZXHValueObject : NSObject
 //+(instancetype)sharedValueObject;
 //@end
