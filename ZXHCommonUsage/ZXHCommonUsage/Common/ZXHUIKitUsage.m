@@ -7,7 +7,7 @@
 //
 
 #import "ZXHUIKitUsage.h"
-
+#import <QuartzCore/QuartzCore.h>
 @implementation ZXHUIKitUsage
 +(ZXHUIKitUsage *)sharedUIKitUsage
 {

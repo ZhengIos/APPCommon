@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0234B351D801270001E63C3 /* UIImage+ZXHCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = E0234B341D801270001E63C3 /* UIImage+ZXHCustom.m */; };
+		E0234B371D801462001E63C3 /* aa1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0234B361D801462001E63C3 /* aa1@2x.png */; };
 		FFA7A2021D222A9900C1ED6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A2011D222A9900C1ED6D /* main.m */; };
 		FFA7A2051D222A9900C1ED6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A2041D222A9900C1ED6D /* AppDelegate.m */; };
 		FFA7A2081D222A9900C1ED6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA7A2071D222A9900C1ED6D /* ViewController.m */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0234B331D801270001E63C3 /* UIImage+ZXHCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZXHCustom.h"; sourceTree = "<group>"; };
+		E0234B341D801270001E63C3 /* UIImage+ZXHCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZXHCustom.m"; sourceTree = "<group>"; };
+		E0234B361D801462001E63C3 /* aa1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aa1@2x.png"; sourceTree = "<group>"; };
 		FFA7A1FD1D222A9900C1ED6D /* ZXHCommonUsage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXHCommonUsage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA7A2011D222A9900C1ED6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFA7A2031D222A9900C1ED6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 		FFA7A1FF1D222A9900C1ED6D /* ZXHCommonUsage */ = {
 			isa = PBXGroup;
 			children = (
+				E0234B361D801462001E63C3 /* aa1@2x.png */,
 				FFFB6C261D4987E000BCA557 /* Common */,
 				FFFB6C2F1D4987E000BCA557 /* UIViewCategory */,
 				FFA7A2031D222A9900C1ED6D /* AppDelegate.h */,
@@ -123,6 +129,8 @@
 		FFFB6C2F1D4987E000BCA557 /* UIViewCategory */ = {
 			isa = PBXGroup;
 			children = (
+				E0234B331D801270001E63C3 /* UIImage+ZXHCustom.h */,
+				E0234B341D801270001E63C3 /* UIImage+ZXHCustom.m */,
 				FFFB6C301D4987E000BCA557 /* UINavigationBar+ZXHUsage.h */,
 				FFFB6C311D4987E000BCA557 /* UINavigationBar+ZXHUsage.m */,
 				FFFB6C321D4987E000BCA557 /* UITabBar+ZXHUsage.h */,
@@ -194,6 +202,7 @@
 			files = (
 				FFA7A2101D222A9900C1ED6D /* LaunchScreen.storyboard in Resources */,
 				FFA7A20D1D222A9900C1ED6D /* Assets.xcassets in Resources */,
+				E0234B371D801462001E63C3 /* aa1@2x.png in Resources */,
 				FFA7A20B1D222A9900C1ED6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +217,7 @@
 				FFFB6C3B1D4987E000BCA557 /* ZXHValueObject.m in Sources */,
 				FFFB6C391D4987E000BCA557 /* ZXHNetManager.m in Sources */,
 				FFFB6C3C1D4987E000BCA557 /* UINavigationBar+ZXHUsage.m in Sources */,
+				E0234B351D801270001E63C3 /* UIImage+ZXHCustom.m in Sources */,
 				FFA7A2081D222A9900C1ED6D /* ViewController.m in Sources */,
 				FFA7A2051D222A9900C1ED6D /* AppDelegate.m in Sources */,
 				FFFB6C3A1D4987E000BCA557 /* ZXHUIKitUsage.m in Sources */,

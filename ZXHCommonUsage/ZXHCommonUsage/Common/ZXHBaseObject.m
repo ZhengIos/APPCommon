@@ -8,6 +8,6 @@
 
 #import "ZXHBaseObject.h"
 
-@implementation ZXHBaseObject
-
-@end
+//@implementation ZXHBaseObject
+//
+//@end
